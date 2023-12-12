@@ -15,16 +15,16 @@ createBtn.addEventListener("click", () => {
     createBox(amount);
     input.value = "";
   } else {
-    alert('Please enter a number between 1 and 100.');
+    alert("Please enter a number between 1 and 100.");
   }
 
 });
 
-destroyBtn.addEventListener('click', destroyBoxes);
+destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBox(amount) {
   for (let i = 0; i < amount; i++) {
-      const box = document.createElement('div');
+      const box = document.createElement("div");
       box.style.backgroundColor = getRandomHexColor();
       box.style.width = `${30 + i * 10}px`;
       box.style.height = `${30 + i * 10}px`;
@@ -33,5 +33,5 @@ function createBox(amount) {
 }
 
 function destroyBoxes() {
-    boxesContainer.innerHTML = '';
+    boxesContainer.innerHTML = "";
   }
