@@ -14,3 +14,11 @@ button.addEventListener("click", () => {
   body.style.backgroundColor = randomColor;
   textSpan.textContent = randomColor;
 });
+
+const widget = document.querySelector(".widget")
+const container = document.createElement("div");
+container.classList.add("containerT5");
+container.append(widget)
+body.append(container)
+const paragraph = document.querySelector(".widget p");
+paragraph.classList.add("show_color")

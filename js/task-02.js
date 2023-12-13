@@ -44,3 +44,9 @@ images.forEach((image) => {
   listItem.append(imageElement);
   galleryList.append(listItem);
 })
+
+const container = document.createElement("div");
+container.classList.add("containerT2")
+container.append(galleryList);
+const body = document.querySelector("body");
+body.append(container)

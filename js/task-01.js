@@ -10,6 +10,6 @@ const body = document.querySelector("body");
 const categoriesEl = document.querySelector("#categories")
 categoriesEl.classList.add("categoriesList")
 const container = document.createElement("div");
-container.classList.add("container");
+container.classList.add("containerT1");
 container.append(categoriesEl);
 body.append(container)

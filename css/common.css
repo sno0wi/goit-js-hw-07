@@ -13,23 +13,17 @@ body {
   line-height: 1.5;
 }
 
-body p {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 8px;
-  border: 1px solid black;
-}
 
 /* task-01 */
 
-.container {
+.containerT1 {
   margin: 0 auto;
   width: 440px;
 }
 
 .categoriesList {
   list-style: none;
+  padding: 0;
 }
 
 .categoriesList ul {
@@ -61,6 +55,10 @@ body p {
 
 /* task-02 */
 
+.containerT2 {
+  padding: 100px 156px;
+}
+
 img {
   width: 360px;
   height: 300px;
@@ -72,18 +70,20 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
-}
-
-.gallery li {
-  background-color: #fafafa;
+  list-style: none;
   padding: 0;
-  margin: 0;
-  border-radius: 0;
 }
 
 /* task-02 */
 
 /* task-03 */
+
+.containerT3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 #name-input {
   display: flex;
@@ -114,8 +114,13 @@ body h1 {
 
 /* task-04 */
 
-.login-form {
+.containerT4 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
   flex-direction: column;
   padding: 24px;
   background: #fff;
@@ -125,7 +130,6 @@ body h1 {
 .login-form label {
   display: flex;
   flex-direction: column;
-  /* font-size: 16px; */
 }
 
 .login-form input {
@@ -148,4 +152,123 @@ body h1 {
   color: #fff;
 }
 
+.inputEmail::placeholder {
+  padding: 8px 16px;
+}
+
+.inputPassword::placeholder {
+  padding: 8px 16px;
+}
+
 /* task-04 */
+
+/* task-05 */
+.containerT5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show_color {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.change-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #4E75FF;
+}
+
+/* task-05 */
+
+/* task-06 */
+
+.containerT6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  width: 486px;
+  padding: 32px;
+  background-color: #F6F6FE;
+  border-radius: 8px;
+}
+
+.createBtn {
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #4E75FF;
+  color: #fff;
+}
+
+.createBtn:hover {
+  background: #6C8CFF;
+}
+
+.destroyBtn {
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #FF4E4E;
+  color: #fff;
+}
+
+.destroyBtn:hover {
+  background: #FF7070;
+}
+
+.input {
+  display: flex;
+  padding: 8px 72px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.input:hover {
+  border: 1px solid #000;
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#boxes {
+  display: flex;
+  width: 486px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #F6F6FE;
+}
+
+
+/* task-06 */

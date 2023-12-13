@@ -34,4 +34,14 @@ function createBox(amount) {
 
 function destroyBoxes() {
     boxesContainer.innerHTML = "";
-  }
+}
+  
+const body = document.querySelector("body");
+const container = document.createElement("div");
+container.classList.add("containerT6");
+const controls = document.querySelector("#controls")
+container.append(controls,boxesContainer)
+body.append(container)
+createBtn.classList.add("createBtn");
+destroyBtn.classList.add("destroyBtn")
+input.classList.add("input")
