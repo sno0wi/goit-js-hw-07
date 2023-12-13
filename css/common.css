@@ -11,10 +11,6 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 body p {
@@ -26,25 +22,35 @@ body p {
 }
 
 /* task-01 */
-ul {
+
+.container {
+  margin: 0 auto;
+  width: 440px;
+}
+
+.categoriesList {
+  list-style: none;
+}
+
+.categoriesList ul {
   list-style: none;
   padding: 0;
 }
 
-h2 {
+.categoriesList h2 {
   margin: 0 0 16px 0;
   font-weight: 600;
   line-height: 1.33em;
 }
 
-.item {
+.categoriesList .item {
   background-color: #F6F6FE;
   padding: 16px;
   margin-bottom: 16px;
   border-radius: 8px;
 }
 
-.item li {
+.categoriesList .item li {
   border: 1px solid #808080;
   border-radius: 4px;
   padding: 8px 16px;
