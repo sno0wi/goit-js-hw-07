@@ -4,22 +4,22 @@ function formValidation(event) {
     event.preventDefault();
 
     const form = event.target;
-    const email = form.elements.email.value;
-    const password = form.elements.password.value;
+    const email = form.elements.email.value.trim();
+    const password = form.elements.password.value.trim();
+
+    const data = {
+        Email: email,
+        Password: password
+    }
 
     if (email === "" || password === "") {
         alert("Please enter your email and password")
+    } else {
+        console.log(data)
     }
-
-    console.log(`email: ${email.trim()}, Password: ${password.trim()}`);
     form.reset();
 }
 
-const body = document.querySelector("body");
-const container = document.createElement("div");
-container.classList.add("containerT4");
-container.append(form)
-body.append(container)
 const emailInput = document.querySelector('input[name="email"]');
 const passwordInput = document.querySelector('input[name="password"]');
 emailInput.placeholder = 'Enter your email';

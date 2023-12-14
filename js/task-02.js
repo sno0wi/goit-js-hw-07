@@ -29,24 +29,18 @@ const images = [
 ];
 
 const galleryList = document.querySelector(".gallery");
-// const markup = images
-//   .map((image) => `<li class="item"><img src=${image.url} alt=${image.alt}></li>`)
-//   .join("");
-//   galleryList.insertAdjacentHTML("beforeend", markup);
+const markup = images
+  .map((image) => `<li class="item"><img src=${image.url} alt=${image.alt}></li>`)
+  .join("");
+  galleryList.insertAdjacentHTML("beforeend", markup);
 
-images.forEach((image) => {
-  const listItem = document.createElement("li");
-  listItem.classList.add("item");
-  const imageElement = document.createElement("img");
-  imageElement.src = image.url;
-  imageElement.alt = image.alt;
+// images.forEach((image) => {
+//   const listItem = document.createElement("li");
+//   listItem.classList.add("item");
+//   const imageElement = document.createElement("img");
+//   imageElement.src = image.url;
+//   imageElement.alt = image.alt;
 
-  listItem.append(imageElement);
-  galleryList.append(listItem);
-})
-
-const container = document.createElement("div");
-container.classList.add("containerT2")
-container.append(galleryList);
-const body = document.querySelector("body");
-body.append(container)
+//   listItem.append(imageElement);
+//   galleryList.append(listItem);
+// })
