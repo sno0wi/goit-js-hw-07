@@ -21,7 +21,7 @@ createBtn.addEventListener("click", () => {
 
 destroyBtn.addEventListener("click", destroyBoxes);
 
-function createBox(amount) {
+function createBoxes(amount) {
   const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
       const box = document.createElement("div");
@@ -43,7 +43,3 @@ function clearContainer() {
 function destroyBoxes() {
   clearContainer();
 }
-
-createBtn.classList.add("createBtn");
-destroyBtn.classList.add("destroyBtn");
-input.classList.add("input");

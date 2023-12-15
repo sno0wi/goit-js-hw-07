@@ -1,5 +1,5 @@
 const form = document.querySelector(".login-form")
-form.addEventListener("submit", formValidation);
+
 function formValidation(event) {
     event.preventDefault();
 
@@ -8,17 +8,20 @@ function formValidation(event) {
     const password = form.elements.password.value.trim();
 
     const data = {
-        Email: email,
-        Password: password
+        email: email,
+        password: password
     }
 
     if (email === "" || password === "") {
         alert("Please enter your email and password")
     } else {
         console.log(data)
+        form.reset();
     }
-    form.reset();
 }
+
+form.addEventListener("submit", formValidation);
+
 
 const emailInput = document.querySelector('input[name="email"]');
 const passwordInput = document.querySelector('input[name="password"]');
