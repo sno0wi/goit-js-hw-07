@@ -12,7 +12,7 @@ const input = document.querySelector("#controls input")
 createBtn.addEventListener("click", () => {
   const amount = parseInt(input.value);
   if (amount >= 1 && amount <= 100)  {
-    createBox(amount);
+    createBoxes(amount);
     input.value = "";
   } else {
     alert("Please enter a number between 1 and 100.");
